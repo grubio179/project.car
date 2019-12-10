@@ -1,0 +1,43 @@
+/*Layout*/
+.grid-container{
+    display: grid;
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+.box{
+    font-size: 150%;
+    position: relative;
+    box-sizing: content-box; 
+    border: 1px solid black; 
+    background-color: pink; 
+}
+.nav{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+.info1{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    background-image: url("../Images/tesla1.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 50%;
+}
+.info2{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+.footer{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 5;
+    grid-row-end: 6;
+}
