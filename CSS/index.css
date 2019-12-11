@@ -1,4 +1,12 @@
 /*Layout*/
+@font-face{
+    font-family: "font1";
+    src: url("../Fonts/tesla.ttf") format("truetype");
+}
+@font-face{
+    font-family: "font2";
+    src: url("../Fonts/title1.ttf") format("truetype");
+}
 .grid-container{
     display: grid;
     grid-row-gap: 20px;
@@ -10,14 +18,35 @@
     font-size: 150%;
     position: relative;
     box-sizing: content-box; 
-    border: 1px solid black; 
-    background-color: pink; 
+    border: 1px solid transparent; 
+ 
 }
 .nav{
     grid-column-start: 1;
     grid-column-end: 4;
     grid-row-start: 1;
     grid-row-end: 2;
+    background-color: transparent; 
+    color: black; 
+    height: 1.9em;
+}
+.nav img{
+    height: 1.5em;
+    width: 1.5em; 
+    margin-left: .5em;
+}
+.nav a{
+    text-decoration: none;
+    color:rgb(143, 21, 21);
+    padding: 7.2em;
+    margin: 0em;
+    transition: all .5s ease-in-out;
+    font-family: "font1";
+    margin-bottom: 1em;
+}
+.nav a:hover{
+    color: rgb(121, 121, 121);
+    /*transform: scale(2);*/
 }
 .info1{
     grid-column-start: 1;
@@ -27,13 +56,57 @@
     background-image: url("../Images/tesla1.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: 50%;
+    background-size: 100%;
+    height: 29.7em;
+    filter: brightness(.69);
+    overflow: hidden;
+}
+.info1 img{
+    height: 30em;
+    width: 25em;
+    text-align: center; 
+    padding: 21em;
+    padding-top: 3em;
+    transition: all .5s linear;
 }
 .info2{
     grid-column-start: 1;
     grid-column-end: 4;
     grid-row-start: 4;
     grid-row-end: 5;
+    height: 60em;
+}
+.info2 iframe{
+    float: right;
+    height: 30em;
+    width: 30em;
+
+}
+.info2 p{
+    font-family: "font2"; 
+    text-align: justify;
+    padding: 1em;
+    color: gray; 
+    padding-right: 31.5em;
+
+}
+.info2 h3{
+    font-family: "font2";
+    color: gray; 
+    text-align: left;
+    font-size: 1em;
+    padding-bottom: 0em;
+    margin-bottom: 0em;
+    margin-left: 1em;
+}
+.info2 h1{
+    font-family: "font1";
+    color: gray; 
+    text-align: left;
+    font-size: 2em;
+    padding-top: 0em;
+    margin: 0em;
+    margin-left: 1em; 
 }
 .footer{
     grid-column-start: 1;
