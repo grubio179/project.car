@@ -1,4 +1,4 @@
-/*Layout For the Tesla website*/
+/* CSS for the specs page of the Tesla Website */ 
 @font-face{
     font-family: "font1";
     src: url("../Fonts/tesla.ttf") format("truetype");
@@ -53,13 +53,21 @@
     grid-column-end: 4;
     grid-row-start: 2;
     grid-row-end: 4;
-    background-image: url("../Images/tesla1.jpg");
+    background-image: url("../Images/tesla7.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100%;
     height: 29.7em;
     filter: brightness(.69);
     overflow: hidden;
+}
+.info1 img{
+    height: 30em;
+    width: 25em;
+    text-align: center; 
+    padding: 21em;
+    padding-top: 3em;
+    transition: all .5s linear;
 }
 .info1 h1{
     font-family: "font1";
@@ -69,14 +77,6 @@
     padding: 3em;
     font-size: 4em;
     text-shadow: 1.5px 1.5px black; 
-}
-.info1 img{
-    height: 30em;
-    width: 25em;
-    text-align: center; 
-    padding: 21em;
-    padding-top: 3em;
-    transition: all .5s linear;
 }
 .info2{
     grid-column-start: 1;
