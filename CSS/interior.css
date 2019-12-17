@@ -1,4 +1,4 @@
-/* CSS for the specs page of the Tesla Website */ 
+/* CSS for the Interior page of the Tesla Website */ 
 @font-face{
     font-family: "font1";
     src: url("../Fonts/tesla.ttf") format("truetype");
@@ -53,7 +53,7 @@
     grid-column-end: 4;
     grid-row-start: 2;
     grid-row-end: 4;
-    background-image: url("../Images/tesla7.jpg");
+    background-image: url("../Images/interior.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100%;
@@ -61,14 +61,14 @@
     filter: brightness(.69);
     overflow: hidden;
 }
-.info1 img{
+/*.info1 img{
     height: 30em;
     width: 25em;
     text-align: center; 
     padding: 21em;
     padding-top: 3em;
     transition: all .5s linear;
-}
+}*/
 .info1 h1{
     font-family: "font1";
     color: rgb(235, 229, 229); 
@@ -83,7 +83,7 @@
     grid-column-end: 4;
     grid-row-start: 4;
     grid-row-end: 5;
-    height: 32em;
+    height: 70em;
 }
 .info2 iframe{
     float: right;
@@ -101,9 +101,9 @@
 
 }
 .info2 img{
-    width: 42em;
-    height: 25em;
-    float: right;
+    width: 40em;
+    height: 23em;
+    float: left;
     padding-right: 1em;
 }
 /*
@@ -115,8 +115,38 @@
 */
 .info2 h4{
     font-family: "font2";
+    color: white; 
+    float: right;
+    font-size: 1em;
+    padding-bottom: 0em;
+    margin-bottom: 0em;
+    margin-left: 1em;
+    padding-right: .7em;
+}
+.info2 h4:hover{
+    color: gray;
+    transition-duration: 1s;
+    cursor: pointer;
+}
+.info2 h5:hover{
+    color: gray;
+    transition-duration: 1s;
+    cursor: pointer;
+}
+.info2 h5{
+    font-family: "font2";
+    color: white; 
+    float: right;
+    font-size: 1em;
+    padding-bottom: 0em;
+    margin-bottom: 0em;
+    margin-left: 1em;
+    padding-right: .7em;
+}
+.info2 h2{
+    font-family: "font2";
     color: gray; 
-    text-align: left;
+    text-align: right;
     font-size: 1em;
     padding-bottom: 0em;
     margin-bottom: 0em;
@@ -126,7 +156,7 @@
 .info2 h3{
     font-family: "font2";
     color: gray; 
-    text-align: left;
+    text-align: right;
     font-size: 1em;
     padding-bottom: 0em;
     margin-bottom: 0em;
@@ -136,7 +166,7 @@
 .info2 h1{
     font-family: "font1";
     color: gray; 
-    text-align: left;
+    text-align: right;
     font-size: 2em;
     padding-top: 0em;
     margin: 0em;
@@ -158,25 +188,3 @@
 .footer a:hover{
     color: rgb(121, 121, 121);
 }
-/*<h3>
-                    INTERNAL SPECS
-                </h3>
-                <h1>
-                    MODEL Y
-                </h1>
-                <img src="Images/specs2.jpg">
-                <h3>12-way power adjustable front and rear heated seats</h3>
-                <h3>Three independently folding 2nd row seats</h3>
-                <h3>Premium Audio- 14 speakers, 1 subwoofer, 2 amps, and immersive sound</h3>
-                <h3>Satellite- view maps with live traffic visualization and navigation</h3>
-                <h3>In-car internet streaming music and media</h3>
-                <h3>Internet Browser</h3>
-                <h3>Location aware automatic garage door opener</h3>
-                <h3>LED fog lamps</h3>
-                <h3>Tinted glass roof with ultraviolet and infarred protection</h3>
-                <h3>Auto dimming, power folding, heated side mirrors</h3>
-                <h3>Music and media over Bluetooth</h3>
-                <h3>Custom driver profiles</h3>
-                <h3>Center console wuth storage, 4 USB ports and docking for 2 smartphones</h3>
-                */
-                
