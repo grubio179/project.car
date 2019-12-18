@@ -84,6 +84,7 @@
     grid-row-start: 4;
     grid-row-end: 5;
     height: 70em;
+    display: block;
 }
 .info2 iframe{
     float: right;
@@ -122,6 +123,9 @@
     margin-bottom: 0em;
     margin-left: 1em;
     padding-right: .7em;
+    position: relative;
+    top: 0px;
+    border-right: 1px gray;
 }
 .info2 h4:hover{
     color: gray;
@@ -142,6 +146,7 @@
     margin-bottom: 0em;
     margin-left: 1em;
     padding-right: .7em;
+    position: relative;
 }
 .info2 h2{
     font-family: "font2";
@@ -152,6 +157,7 @@
     margin-bottom: 0em;
     margin-left: 1em;
     padding-right: .7em;
+    position: relative;
 }
 .info2 h3{
     font-family: "font2";
