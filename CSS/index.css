@@ -7,6 +7,8 @@
     font-family: "font2";
     src: url("../Fonts/title1.ttf") format("truetype");
 }
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
 .grid-container{
     display: grid;
     grid-row-gap: 20px;
@@ -133,3 +135,382 @@
 .footer a:hover{
     color: rgb(121, 121, 121);
 }
+}/* end of the Laptop layout */ 
+
+
+/* Tablet Layout */
+@media only screen and (max-width: 991px) and (min-width: 601px) {
+    body{
+        background-color: chartreuse;
+    }
+    .grid-container{
+        display: grid;
+        grid-row-gap: 20px;
+        grid-column-gap: 20px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    }
+    .box{
+        font-size: 150%;
+        position: relative;
+        box-sizing: content-box; 
+        border: 1px solid transparent; 
+     
+    }
+    .nav{
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        background-color: transparent; 
+        color: black; 
+        height: 1.9em;
+    }
+    .nav img{
+        height: 1.5em;
+        width: 1.5em; 
+        margin-left: .5em;
+    }
+    .nav a{
+        text-decoration: none;
+        color:rgb(143, 21, 21);
+        padding: 1.15em;
+        margin: 0em;
+        transition: all .5s ease-in-out;
+        font-family: "font1";
+        margin-bottom: 1em;
+    }
+    .nav a:hover{
+        color: rgb(121, 121, 121);
+        /*transform: scale(2);*/
+    }
+    .info1{
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 4;
+        background-image: url("../Images/tesla1.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        height: 18em;
+        filter: brightness(.69);
+        overflow: hidden;
+    }
+    /*.info1 img{
+        height: 30em;
+        width: 25em;
+        text-align: center; 
+        padding: 21em;
+        padding-top: 3em;
+        transition: all .5s linear;
+    }*/
+    .info1 h1{
+        font-family: "font1";
+        color: rgb(235, 229, 229); 
+        text-align: center; 
+        z-index: 2; 
+        top: 50%;
+        font-size: 4em;
+        text-shadow: 1.5px 1.5px black; 
+        position: relative;
+    }
+    .info2{
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 4;
+        grid-row-end: 5;
+        height: 59.5em;
+        display: block;
+    }
+    .info2 iframe{
+        float: right;
+        height: 30em;
+        width: 30em;
+    
+    }
+    
+    .info2 p{
+        font-family: "font2"; 
+        text-align: justify;
+        padding: 1em;
+        color: gray; 
+    
+    }
+    .info2 img{
+        width: 24em;
+        height: 20;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        text-align: center; 
+
+    }
+    /*
+    .info2 img:hover{
+        width: 38em;
+        height: 24em;
+        cursor: zoom-in;
+    }
+    */
+    .info2 h4{
+        font-family: "font2";
+        color: gray; 
+        text-align: center;
+        font-size: 1em;
+        padding-bottom: 0em;
+        margin-bottom: 0em;
+        margin-left: 1em;
+        padding-right: .7em;
+        position: relative;
+        top: 0px;
+    }
+    .info2 h5{
+        font-family: "font2";
+        color: gray; 
+        text-align: center;
+        font-size: 1em;
+        padding-bottom: 0em;
+        margin-bottom: 0em;
+        margin-left: 1em;
+        padding-right: .7em;
+        position: relative;
+    }
+    .info2 h2{
+        font-family: "font2";
+        color: gray; 
+        text-align: center;
+        font-size: 1em;
+        padding-bottom: 0em;
+        margin-bottom: 0em;
+        margin-left: 1em;
+        padding-right: .7em;
+        position: relative;
+    }
+    .info2 h3{
+        font-family: "font2";
+        color: gray; 
+        text-align: center;
+        font-size: 1em;
+        padding-bottom: 0em;
+        margin-bottom: 0em;
+        margin-left: 1em;
+        padding-right: 1em;
+    }
+    .info2 h1{
+        font-family: "font1";
+        color: gray; 
+        text-align: center;
+        font-size: 2em;
+        padding-top: 0em;
+        margin: 0em;
+        margin-left: 1em; 
+    }
+    .footer{
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 5;
+        grid-row-end: 6;
+    }
+    .footer a{
+        color: rgb(143, 21, 21); 
+        font-size: 1em;
+        font-family: "font1";
+        text-decoration: none;
+        padding: 1.3em;
+    }
+    .footer a:hover{
+        color: rgb(121, 121, 121);
+    }
+}
+/*End of Tablet Layout */ 
+
+
+
+
+
+/* Small Devices Like Phones */
+@media only screen and (max-width: 600px) {
+    .grid-container{
+        display: grid;
+        grid-row-gap: 20px;
+        grid-column-gap: 20px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    }
+    .box{
+        font-size: 150%;
+        position: relative;
+        box-sizing: content-box; 
+        border: 1px solid transparent; 
+     
+    }
+    .nav{
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        background-color: transparent; 
+        color: black; 
+        height: 1.9em;
+    }
+    .nav img{
+        height: 1.5em;
+        width: 1.5em; 
+        margin-left: .5em;
+    }
+    .nav a{
+        text-decoration: none;
+        color:rgb(143, 21, 21);
+        padding: 1.5em;
+        margin: 0em;
+        transition: all .5s ease-in-out;
+        font-family: "font1";
+        margin-bottom: 1em;
+        font-size: .7em;
+    }
+    .nav a:hover{
+        color: rgb(121, 121, 121);
+        /*transform: scale(2);*/
+    }
+    .info1{
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 4;
+        background-image: url("../Images/tesla1.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100%;
+        filter: brightness(.69);
+        overflow: hidden;
+        background-color: aquamarine;
+        background-position-y: 2.3em;
+    }
+    /*.info1 img{
+        height: 30em;
+        width: 25em;
+        text-align: center; 
+        padding: 21em;
+        padding-top: 3em;
+        transition: all .5s linear;
+    }*/
+    .info1 h1{
+        font-family: "font1";
+        color: rgb(235, 229, 229); 
+        text-align: center; 
+        z-index: 2; 
+        padding: 1em;
+        font-size: 2.5em;
+        text-shadow: 1.5px 1.5px black; 
+    }
+    .info2{
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 4;
+        grid-row-end: 5;
+        height: 49em;
+        display: block;
+    }
+    .info2 iframe{
+        width: 20em;
+        height: 14em;
+        margin-right: auto;
+        margin-left: auto;
+        display: block;
+    
+    }
+    
+    .info2 p{
+        font-family: "font2"; 
+        text-align: justify;
+        padding: 1em;
+        color: gray; 
+    
+    }
+    .info2 img{
+        width: 13em;
+        height: 7em;
+        margin-right: auto;
+        margin-left: auto;
+        display: block;
+    }
+    
+    /*
+    .info2 img:hover{
+        width: 38em;
+        height: 24em;
+        cursor: zoom-in;
+    }
+    */
+    .info2 h4{
+        font-family: "font2";
+        color: gray; 
+        text-align: center;
+        font-size: .7em;
+        padding-bottom: 0em;
+        margin-bottom: 0em;
+        margin-left: 1em;
+        padding-right: .7em;
+        position: relative;
+        top: 0px;
+    }
+
+    .info2 h5{
+        font-family: "font2";
+        color: gray; 
+        text-align: center;
+        font-size: .7em;
+        padding-bottom: 0em;
+        margin-bottom: 0em;
+        margin-left: 1em;
+        padding-right: .7em;
+        position: relative;
+    }
+    .info2 h2{
+        font-family: "font2";
+        color: gray; 
+        text-align: center;
+        font-size: .7em;
+        padding-bottom: 0em;
+        margin-bottom: 0em;
+        margin-left: 1em;
+        padding-right: .7em;
+        position: relative;
+    }
+    .info2 h3{
+        font-family: "font2";
+        color: gray; 
+        text-align: center;
+        font-size: 1em;
+        padding-bottom: 0em;
+        margin-bottom: 0em;
+        margin-left: 1em;
+        padding-right: 1em;
+    }
+    .info2 h1{
+        font-family: "font1";
+        color: gray; 
+        text-align: center;
+        font-size: 1.5em;
+        padding-top: 0em;
+        margin: 0em;
+    }
+    .footer{
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 5;
+        grid-row-end: 6;
+    }
+    .footer a{
+        color: rgb(143, 21, 21); 
+        font-size: .7em;
+        font-family: "font1";
+        text-decoration: none;
+        padding: 1.3em;
+    }
+    .footer a:hover{
+        color: rgb(121, 121, 121);
+    }
+}
+/*End Of Small Device Layout */ 
