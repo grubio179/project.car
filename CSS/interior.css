@@ -254,7 +254,7 @@
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-size: cover;
-        height: 18em;
+        height: 25em;
         filter: brightness(.69);
         overflow: hidden;
     }
